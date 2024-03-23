@@ -4,10 +4,8 @@ body {
     background-color: #f0f0f0; /* Kolor tła strony internetowej */
     color: #333333; /* Kolor tła strony internetowej*/ 
 }
-h1 {
-    color: #00a800; /* Kolor nagłówka */
-    font-size: 24px; /* Rozmiar czcionki nagłówka */
-    font-family: Georgia, serif; /* Rodzina czcionek używana w nagłówku */
+h1{
+    animation: title-change 5s infinite;
 }
 h2 {
     color: #0008a8;
@@ -19,3 +17,28 @@ a {
     color: #f0f0f0;
     font-size: large;
 }
+@keyframes title-change {
+    0% {
+      color: blue;
+      font-size: 50px;
+    }
+    25%{
+        color: goldenrod;
+        font-size: 25px;
+    }
+
+    50% {
+      color: red;
+      font-size: 50px;
+    }
+
+    75% {
+      color: green;
+      font-size: 25px;
+    }
+    100%{
+        color: blue;
+        font-size: 50px;
+
+    }
+  }
